@@ -7,11 +7,11 @@ into the input directory, and they'll be cleaned up and moved to the output dire
 Usage
 -----
 
-This docker image is available as a [trusted build on the docker index](https://hub.docker.com/r/coppit/filebot/).
+This docker image is available as a [trusted build on the docker index](https://hub.docker.com/r/chrisallen/filebot/).
 
 Run:
 
-`sudo docker run --name=FileBot -d -v /etc/localtime:/etc/localtime -v /config/dir/path:/config:rw -v /input/dir/path:/input:rw -v /output/dir/path:/output:rw coppit/filebot`
+`sudo docker run --name=FileBot -d -v /etc/localtime:/etc/localtime -v /config/dir/path:/config:rw -v /input/dir/path:/input:rw -v /output/dir/path:/output:rw chrisallen/filebot`
 
 With the default configuration, files written to the input directory will be renamed and copied to the output directory.
 It is recommended that you do **not** overlap your input and output directories. FileBot will end up re-processing files
